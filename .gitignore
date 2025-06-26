@@ -1,0 +1,63 @@
+# 👉 Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 👉 Django and Celery
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+
+# 👉 Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# 👉 Environment Variables
+.env
+
+# 👉 VS Code
+.vscode/
+
+# 👉 OS junk
+.DS_Store
+Thumbs.db
+
+# 👉 Django static and media
+/staticfiles/
+/media/
+
+# 👉 Migrations (optional: keep only if not shared)
+**/migrations/__pycache__/
+/core/migrations/*.py
+!/core/migrations/__init__.py
+
+# 👉 Redis cache
+*.rdb
+dump.rdb
+
+# 👉 Telegram bot token cache or logs
+*.session
+
+# 👉 MySQL dump files (if any)
+*.sql
+
+# 👉 PyCharm
+.idea/
+
+# 👉 Coverage/test artifacts
+htmlcov/
+.coverage
+.tox/
+.nox/
+pytest_cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache
