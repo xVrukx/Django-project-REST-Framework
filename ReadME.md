@@ -1,4 +1,4 @@
-# Django Backend Assignment by Kanhaiyalal Bohra🚀
+# Django Backend Assignment🚀
 
 This is a Django REST Framework-based backend system with:
 
