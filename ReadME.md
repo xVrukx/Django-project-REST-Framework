@@ -21,39 +21,41 @@ This is a Django REST Framework-based backend system with:
 
 ## 🛠 Setup Instructions
 
+```bash
 git clone https://github.com/xVrukx/Django-project-REST-Framework.git
 cd your-repo-name
 
 # Create virtualenv
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Linux/Mac
 
 # Install dependencies
 pip install -r requirements.txt
 
-# How to run locally
-(terminal 1)
+# Run migrations and server
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 
-# How to start celery
-  (Terminal 2)
-  redis-server.exe --port 6380
-  (Terminal 3)
-  celery -A body worker --loglevel = info --pool = solo
+# Start Redis (Terminal 2)
+redis-server.exe --port 6380
 
-#How to run telegram bot
-(Terminal 4)
+# Start Celery (Terminal 3)
+celery -A body worker --loglevel=info --pool=solo
+
+# Start Telegram Bot (Terminal 4)
 python Telegram_bot.py
 
-# API End points in detail
+```markdown
+## 🔌 API Endpoints
 
-Method |	Endpoint	|   Description	             |    Auth Required
-GET	   |    /public/	|   Public view	             |          ❌
-GET	   |   /private/	|   Private view (DRF token) |       	✅
-POST   |  /api/register/|	API user registration	 |          ❌
-POST   | /api/login/	|   API token login	         |          ❌
+| Method | Endpoint         | Description              | Auth Required |
+|--------|------------------|--------------------------|---------------|
+| GET    | `/public/`       | Public view              | ❌ No         |
+| GET    | `/private/`      | Private view (Token)     | ✅ Yes        |
+| POST   | `/api/register/` | API user registration    | ❌ No         |
+| POST   | `/api/login/`    | API token login          | ❌ No         |
 
 # Folder structure
 
@@ -88,5 +90,8 @@ project/
 │ ├── public.html
 │ └── private.html
 
-👩Guide
-KI my sensei guided me and helped me throught this project
+### 👨‍💻 Developed by Vruk
+**A passionate backend dev in the making!**
+
+###👩Guide
+**KI my sensei guided me and helped me throught this project
