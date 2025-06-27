@@ -21,7 +21,6 @@ This is a Django REST Framework-based backend system with:
 
 ## 🛠 Setup Instructions
 
-```bash
 git clone https://github.com/xVrukx/Django-project-REST-Framework.git
 cd your-repo-name
 
@@ -86,3 +85,6 @@ project/
 │ ├── register.html
 │ ├── public.html
 │ └── private.html
+
+👩Guide
+KI my sensei guided me and helped me throught this project
